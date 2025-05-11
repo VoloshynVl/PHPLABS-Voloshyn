@@ -1,5 +1,4 @@
 <?php
-// date_check.php – форма для перевірки коректності введеної дати
 $validDate = null;
 $dateInput = '';
 
