@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Звіт: Змінні, типи даних та операції у PHP</title>
+</head>
+<body>
+    <h1>Звіт: Основи PHP</h1>
+
+    <h2>1. Що таке змінна у PHP?</h2>
+    <ul>
+        <li>Змінна — це контейнер для зберігання даних.</li>
+        <li>Оголошується знаком <code>$</code> перед іменем (наприклад, <code>$name</code>).</li>
+        <li>Правила іменування:
+            <ul>
+                <li>Ім’я починається з <code>$</code> та літери або підкреслення.</li>
+                <li>Може містити цифри, але не починатися з них.</li>
+                <li>Регістрозалежна (тобто <code>$var</code> ≠ <code>$Var</code>).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>2. Основні типи даних у PHP</h2>
+    <ul>
+        <li>integer (ціле число)</li>
+        <li>float (число з плаваючою точкою)</li>
+        <li>string (рядок)</li>
+        <li>boolean (true/false)</li>
+        <li>array (масив)</li>
+        <li>object (об'єкт)</li>
+        <li>NULL</li>
+        <li>Різниця:
+            <ul>
+                <li><strong>integer</strong>: ціле число, напр. 10</li>
+                <li><strong>float</strong>: десяткове число, напр. 10.5</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>3. Перетворення типів у PHP</h2>
+    <ul>
+        <li><strong>Неявне:</strong> PHP сам змінює тип за контекстом.<br>
+            <code>$sum = "10" + 5; // результат: 15</code>
+        </li>
+        <li><strong>Явне:</strong> використовується приведення типу.<br>
+            <code>$num = (int)"25.7"; // результат: 25</code>
+        </li>
+    </ul>
+
+    <h2>4. Структура простого PHP-скрипта</h2>
+    <ul>
+        <li>Скрипт починається з <code>&lt;?php</code> і закінчується <code>?&gt;</code>.</li>
+        <li>Можна використовувати функції, напр. <code>sqrt()</code>, <code>pow()</code>.</li>
+        <li>Приклад:
+            <pre><code>&lt;?php
+$number = 9;
+echo sqrt($number); // виведе 3
+?&gt;</code></pre>
+        </li>
+    </ul>
+
+    <h2>5. Конкатенація у PHP</h2>
+    <ul>
+        <li>Об'єднання рядків виконується оператором <code>.</code>.</li>
+        <li>Приклад:
+            <code>$fullName = $firstName . " " . $lastName;</code>
+        </li>
+        <li>Результат: якщо <code>$firstName = "Ivan"</code>, <code>$lastName = "Petrenko"</code>, то отримаємо <code>Ivan Petrenko</code>.</li>
+    </ul>
+</body>
+</html>
