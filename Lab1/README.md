@@ -11,7 +11,7 @@
 
 ## Завдання 1
 
-[](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab1/README.md)
+
 
 **Умова:**  
 Виведення всіх чисел від 1 до 10.
@@ -34,7 +34,7 @@ for ($i = 1; $i <= 10; $i++) {
 
 ## Завдання 2
 
-[](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab1/README.md)
+
 
 **Умова:**  
 Перевірка, чи є число (27) кратним 3.
