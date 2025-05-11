@@ -26,11 +26,11 @@ echo "log10($x) = $y";
 ?>
 ```
 
-[Перейти до коду]()
+[Перейти до коду](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab2/lab2_task1.php)
 
 **Результат:**
 
-[![Скріншот Завдання 1]()]()
+[![Скріншот Завдання 1](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab2/Screenshots/lab2_task1.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab2/Screenshots/lab2_task1.png)
 
 ---
 
@@ -62,8 +62,8 @@ echo "Рядок str3 = '$str3' як число: $num3<br>";
 ?>
 ```
 
-[Перейти до коду]()
+[Перейти до коду](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab2/lab2_task2.php)
 
 **Результат:**
 
-[![Скріншот Завдання 2]()]()
+[![Скріншот Завдання 2](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab2/Screenshots/lab2_task2.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab2/Screenshots/lab2_task2.png)
