@@ -46,11 +46,12 @@
 </html>
 ```
 
-[Перейти до коду]()
+[Перейти до коду](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab4/Lab4-task1.php)
 
 **Результат:**
 
-[![Скріншот Завдання 1]()]()
+[![Скріншот Завдання 1](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab4/Screenshots/Lab4_task1-first_scr.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab4/Screenshots/Lab4_task1-first_scr.png)
+[![Скріншот Завдання 1](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab4/Screenshots/Lab4_task1-second_scr.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab4/Screenshots/Lab4_task1-second_scr.png)
 
 ---
 
@@ -90,7 +91,7 @@
 </html>
 ```
 
-[Перейти до коду]()
+[Перейти до коду](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab4/Lab4-task2.php)
 
 **Результат:**
 
