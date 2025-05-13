@@ -95,4 +95,4 @@
 
 **Результат:**
 
-[![Скріншот Завдання 2]()]()
+[![Скріншот Завдання 2](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab4/Screenshots/Lab4-task2.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab4/Screenshots/Lab4-task2.png)
