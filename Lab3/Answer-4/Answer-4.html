@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Звіт: Потік виконання в PHP</title>
+</head>
+<body>
+    <h1>Звіт: Потік виконання, умови та цикли в PHP</h1>
+
+    <h2>1. Потік виконання в PHP</h2>
+    <ul>
+        <li>Потік виконання — це порядок, у якому PHP виконує команди.</li>
+        <li>За замовчуванням код виконується зверху вниз.</li>
+        <li>Умови (if, switch) та цикли (for, while) змінюють хід виконання.</li>
+    </ul>
+
+    <h2>2. Відмінності між if, if-else, if-elseif-else</h2>
+    <ul>
+        <li><strong>if</strong>: перевіряє одну умову.</li>
+        <li><strong>if-else</strong>: одна умова — два варіанти дій.</li>
+        <li><strong>if-elseif-else</strong>: багато умов — обирається одна, що перша виконується.</li>
+        <li>Приклад:
+            <pre><code>
+if ($a > 0) {
+    echo "Позитивне";
+} elseif ($a < 0) {
+    echo "Негативне";
+} else {
+    echo "Нуль";
+}
+            </code></pre>
+        </li>
+    </ul>
+
+    <h2>3. Тернарний оператор</h2>
+    <ul>
+        <li>Скорочена форма if-else.</li>
+        <li>Синтаксис: <code>умова ? значення_якщо_так : значення_якщо_ні;</code></li>
+        <li>Приклад: <code>$msg = ($age &gt;= 18) ? "Дорослий" : "Неповнолітній";</code></li>
+    </ul>
+
+    <h2>4. Основні цикли в PHP</h2>
+    <ul>
+        <li><strong>for</strong>: відома кількість повторів.<br>
+            <code>for ($i = 0; $i &lt; 5; $i++) { echo $i; }</code></li>
+        <li><strong>while</strong>: виконується, поки істинна умова.<br>
+            <code>while ($a &lt; 10) { $a++; }</code></li>
+        <li><strong>do-while</strong>: мінімум одна ітерація.<br>
+            <code>do { ... } while ($a &lt; 5);</code></li>
+        <li><strong>foreach</strong>: перебирає масиви.<br>
+            <code>foreach ($arr as $item) { echo $item; }</code></li>
+    </ul>
+
+    <h2>5. Оператори break, continue, goto</h2>
+    <ul>
+        <li><strong>break</strong>: припиняє виконання циклу.<br>
+            <code>if ($x == 5) break;</code></li>
+        <li><strong>continue</strong>: переходить до наступної ітерації.<br>
+            <code>if ($x % 2 == 0) continue;</code></li>
+        <li><strong>goto</strong>: переходить до заданої мітки в коді.<br>
+            <code>goto end; ... end: echo "Кінець";</code></li>
+        <li>Використовується рідко через зниження читабельності.</li>
+    </ul>
+</body>

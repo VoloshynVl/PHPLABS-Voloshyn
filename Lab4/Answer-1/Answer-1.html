@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Звіт: Масиви та функції в PHP</title>
+</head>
+<body>
+    <h1>Звіт: Масиви та функції в PHP</h1>
+
+    <h2>1. Типи масивів у PHP</h2>
+    <ul>
+        <li><strong>Індексовані масиви:</strong> ключі — числа<br>
+            <code>$arr = [10, 20, 30];</code>
+        </li>
+        <li><strong>Асоціативні масиви:</strong> ключі — рядки<br>
+            <code>$user = ["name" => "Ivan", "age" => 25];</code>
+        </li>
+        <li><strong>Багатовимірні масиви:</strong> масиви всередині масивів<br>
+            <code>$matrix = [[1,2],[3,4]];</code>
+        </li>
+    </ul>
+
+    <h2>2. Основні операції з масивами</h2>
+    <ul>
+        <li>Створення: <code>$a = array(1, 2, 3);</code></li>
+        <li>Додавання елементів: <code>$a[] = 4;</code></li>
+        <li>Читання значення: <code>$a[0];</code></li>
+        <li>Зміна: <code>$a[1] = 99;</code></li>
+        <li>Видалення: <code>unset($a[2]);</code></li>
+    </ul>
+
+    <h2>3. Вбудовані функції для масивів</h2>
+    <ul>
+        <li><code>count($arr)</code> — кількість елементів</li>
+        <li><code>array_push($arr, $val)</code> — додати в кінець</li>
+        <li><code>array_pop($arr)</code> — видалити з кінця</li>
+        <li><code>array_merge($a, $b)</code> — об'єднання масивів</li>
+        <li><code>in_array($val, $arr)</code> — перевірка наявності елемента</li>
+        <li><code>array_keys($arr)</code>, <code>array_values($arr)</code></li>
+    </ul>
+
+    <h2>4. Створення функцій у PHP</h2>
+    <ul>
+        <li>Оголошення: <br>
+            <code>function greet($name) { return "Hello, $name"; }</code>
+        </li>
+        <li>Виклик: <code>greet("Ivan");</code></li>
+        <li>Параметри можуть бути обов'язковими або з умовчанням</li>
+        <li>Функції можуть повертати значення через <code>return</code></li>
+    </ul>
+
+    <h2>5. Оптимізація масивів і функцій</h2>
+    <ul>
+        <li>Використовувати <code>foreach</code> замість <code>for</code> для читабельності</li>
+        <li>Не копіювати великі масиви — передавати за посиланням: <code>function test(&$arr)</code></li>
+        <li>Уникати повторного перебору одного й того ж масиву</li>
+        <li>Виносити повторюваний код у функції</li>
+        <li>Використовувати корисні функції: <code>array_map()</code>, <code>array_filter()</code></li>
+    </ul>
+</body>
+</html>

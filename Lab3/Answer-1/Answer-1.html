@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Звіт: Потік виконання, умовні конструкції та цикли у PHP</title>
+</head>
+<body>
+    <h1>Звіт: Потік виконання, умовні конструкції та цикли у PHP</h1>
+
+    <h2>1. Потік виконання у PHP</h2>
+    <ul>
+        <li>Потік виконання — це послідовність команд, що виконує програма зверху вниз.</li>
+        <li>Змінюється за допомогою умов (if) та циклів (for, while).</li>
+        <li>Наприклад, блок <code>if</code> може змінити хід виконання залежно від умови.</li>
+    </ul>
+
+    <h2>2. Умовні конструкції</h2>
+    <ul>
+        <li><strong>if:</strong> <code>if ($a > 5) { ... }</code></li>
+        <li><strong>if-else:</strong> <code>if (...) { ... } else { ... }</code></li>
+        <li><strong>if-elseif-else:</strong> для кількох умов</li>
+        <li><strong>Вкладені умови:</strong> <code>if (...) { if (...) { ... } }</code></li>
+        <li><strong>Тернарний оператор:</strong> <code>$result = ($a > 0) ? "yes" : "no";</code></li>
+        <li><strong>switch:</strong> використовується, коли багато варіантів:
+            <pre><code>switch ($color) {
+    case "red": echo "Червоний"; break;
+    case "blue": echo "Синій"; break;
+    default: echo "Інший";
+}</code></pre>
+        </li>
+    </ul>
+
+    <h2>3. Основні цикли у PHP</h2>
+    <ul>
+        <li><strong>for:</strong> цикл з лічильником<br>
+            <code>for ($i = 0; $i < 5; $i++) { echo $i; }</code>
+        </li>
+        <li><strong>while:</strong> виконується поки умова істинна<br>
+            <code>while ($a < 10) { $a++; }</code>
+        </li>
+        <li><strong>do-while:</strong> мінімум одна ітерація<br>
+            <code>do { ... } while ($a < 5);</code>
+        </li>
+        <li><strong>foreach:</strong> для масивів<br>
+            <code>foreach ($arr as $item) { echo $item; }</code>
+        </li>
+    </ul>
+
+    <h2>4. Управління потоком в циклах</h2>
+    <ul>
+        <li><strong>break:</strong> вихід із циклу достроково<br>
+            <code>if ($x == 5) break;</code>
+        </li>
+        <li><strong>continue:</strong> перехід до наступної ітерації<br>
+            <code>if ($x % 2 == 0) continue;</code>
+        </li>
+        <li><strong>goto:</strong> переходить до мітки в коді<br>
+            <code>goto end; ... end: echo "Кінець";</code></li>
+        <li>Обмеження <code>goto</code>: не можна переходити в/з функцій, циклів, або класів.</li>
+        <li><strong>Нескінченний цикл:</strong> <code>while(true) { ... }</code></li>
+        <li>Завершується вручну — через <code>break</code> або умову в середині тіла циклу.</li>
+    </ul>
+</body>
+</html>
