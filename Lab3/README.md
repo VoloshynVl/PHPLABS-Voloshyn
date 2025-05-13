@@ -27,11 +27,11 @@ echo "Сума всіх непарних чисел від 1 до 50: $sum";
 ?>
 ```
 
-[Перейти до коду]()
+[Перейти до коду](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab3/Lab3_task1.php)
 
 **Результат:**
 
-[![Скріншот Завдання 1]()]()
+[![Скріншот Завдання 1](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab3/Screenshots/Lab3_task1.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab3/Screenshots/Lab3_task1.png)
 
 ---
 
@@ -67,8 +67,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </html>
 ```
 
-[Перейти до коду]()
+[Перейти до коду](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab3/Lab3_task2.php)
 
 **Результат:**
 
-[![Скріншот Завдання 2]()]()
+[![Скріншот Завдання 2](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab3/Screenshots/Lab3_task2.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab3/Screenshots/Lab3_task2.png)
+
+[![Скріншот Завдання 2](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab3/Screenshots/Lab3_task2_second_scr.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab3/Screenshots/Lab3_task2_second_scr.png)
