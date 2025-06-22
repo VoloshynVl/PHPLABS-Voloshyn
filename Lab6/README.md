@@ -9,6 +9,10 @@
 
 ---
 
+## Все було виконано в Laragon
+
+[![Скріншот Програми](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Laragon_settings.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Laragon_settings.png)
+
 ## Завдання 1
 
 
