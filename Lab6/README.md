@@ -297,5 +297,6 @@ $conn->close();
 
 **Результат:**
 
-[![Скріншот Завдання 3](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/lab5/Screenshots/Lab5_task2_first-scrn.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/lab5/Screenshots/Lab5_task2_first-scrn.png) 
-[![Скріншот Завдання 2.1](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/lab5/Screenshots/Lab5_task2_second-scrn.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/lab5/Screenshots/Lab5_task2_second-scrn.png)
+[![Скріншот Завдання 3](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task3-first_scr.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task3-first_scr.png) 
+[![Скріншот Завдання 3.1](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task3-second_scr.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task3-second_scr.png)
+[![Скріншот Завдання 3.2](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task3-third_scr.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task3-third_scr.png)
