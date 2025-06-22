@@ -208,7 +208,7 @@ $conn->close();
 
 **Результат:**
 
-[![Скріншот Завдання 2]([https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/lab5/Screenshots/Lab5_task2_first-scrn.png](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task2-first_scr.png))](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task2-first_scr.png) 
+[![Скріншот Завдання 2]([https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/lab5/Screenshots/Lab5_task2_first-scrn.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task2-first_scr.png))](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task2-first_scr.png) 
 [![Скріншот Завдання 2.1](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task2-second_scr.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task2-second_scr.png)
 
 ## Завдання 3
