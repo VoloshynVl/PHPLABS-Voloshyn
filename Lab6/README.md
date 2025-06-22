@@ -70,7 +70,7 @@ if ($hasNumbers) {
 
 **Результат:**
 
-## [![Скріншот Завдання 1](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/lab5/Screenshots/Lab5_task1.png)](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/lab5/Screenshots/Lab5_task1.png) 
+## [![Скріншот Завдання 1](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/Screenshots/Lab6_task1.png) 
 
 
 ## Завдання 2
