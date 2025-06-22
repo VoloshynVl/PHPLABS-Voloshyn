@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Звіт: Взаємодія з MySQL. CRUD операції.</title>
+</head>
+<body>
+    <h1>Звіт: Взаємодія з MySQL. CRUD операції.</h1>
+
+    <h2>1. Які основні етапи налаштування з'єднання між PHP та базою даних MySQL?</h2>
+    <ul>
+        <li>Ініціалізація з’єднання через <code>mysqli_connect()</code> або <code>new mysqli($host, $user, $pass, $dbname)</code>.</li>
+        <li>Перевірка успішності з’єднання через <code>$conn->connect_error</code> або <code>mysqli_connect_error()</code>.</li>
+        <li>Встановлення кодування зв’язку: <code>$conn->set_charset('utf8mb4')</code>.</li>
+        <li>Опційна настройка параметрів сесії (таймзона, SQL_MODE тощо) та обробка помилок.</li>
+    </ul>
+
+    <h2>2. Як реалізувати операцію вставки нових записів у таблицю MySQL через PHP?</h2>
+    <ul>
+        <li>Зчитати дані з форми: <code>$name = $_POST['name'];</code>, <code>$qty = (int)$_POST['quantity'];</code> тощо.</li>
+        <li>Підготувати INSERT-запит (через <code>prepare()</code> або пряму SQL-строку).</li>
+        <li>Якщо <code>prepare()</code>, то <code>$stmt->bind_param("sids", $name, $qty, $price, $date);</code> і <code>$stmt->execute();</code>.</li>
+        <li>Або виконати простий запит: <code>$conn->query("INSERT INTO table(...) VALUES(...)");</code> та перевірити результат.</li>
+    </ul>
+
+    <h2>3. Які функції PHP використовуються для виконання SELECT-запитів і обробки отриманих даних?</h2>
+    <ul>
+        <li><code>mysqli_query($conn, $sql)</code> або <code>$conn->query($sql)</code> для відправки запиту.</li>
+        <li><code>prepare()</code> + <code>execute()</code> для безпечних вибірок.</li>
+        <li><code>fetch_assoc()</code>, <code>fetch_array()</code> або <code>fetch_row()</code> для ітерації рядків результату.</li>
+        <li><code>mysqli_num_rows($result)</code> для перевірки кількості отриманих рядків.</li>
+    </ul>
+
+    <h2>4. Як безпечно реалізувати оновлення даних у MySQL, використовуючи підготовлені запити?</h2>
+    <ul>
+        <li>Створити шаблон запиту з плейсхолдерами:  
+            <code>$stmt = $conn->prepare("UPDATE table SET col1 = ? WHERE id = ?");</code>
+        </li>
+        <li>Прив’язати параметри через <code>$stmt->bind_param("si", $value, $id);</code>.</li>
+        <li>Виконати <code>$stmt->execute();</code> та перевірити успішність.</li>
+        <li>За потреби об’єднати декілька оновлень в одну транзакцію (<code>BEGIN</code> / <code>COMMIT</code>).</li>
+    </ul>
+
+    <h2>5. Як реалізується видалення записів у MySQL за допомогою PHP з урахуванням захисту від SQL-ін’єкцій?</h2>
+    <ul>
+        <li>Валідація вхідного параметра (перетворити в ціле: <code>$id = (int)$_GET['id'];</code>).</li>
+        <li>Підготуйте запит з плейсхолдером:  
+            <code>$stmt = $conn->prepare("DELETE FROM table WHERE id = ?");</code>
+        </li>
+        <li>Прив’яжіть параметр: <code>$stmt->bind_param("i", $id);</code> та виконайте: <code>$stmt->execute();</code>.</li>
+        <li>Перевірте число затронутих рядків (<code>$stmt->affected_rows</code>) та обробіть можливі помилки.</li>
+    </ul>
+</body>
+</html>
