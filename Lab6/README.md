@@ -66,7 +66,7 @@ if ($hasNumbers) {
 </html>
 ```
 
-[Перейти до коду]()
+[Перейти до коду](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/create_orders_db.php)
 
 **Результат:**
 
