@@ -204,7 +204,7 @@ $conn->close();
 ?>
 ```
 
-[Перейти до коду]()
+[Перейти до коду](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/view_orders.php)
 
 **Результат:**
 
@@ -293,7 +293,7 @@ $conn->close();
 
 ```
 
-[Перейти до коду]()
+[Перейти до коду](https://github.com/VoloshynVl/PHPLABS-Voloshyn/blob/main/Lab6/delete_order.php)
 
 **Результат:**
 
