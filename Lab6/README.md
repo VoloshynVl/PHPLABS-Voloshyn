@@ -220,51 +220,74 @@ $conn->close();
 
 ```php
 <?php
-$validDate = null;
-$dateInput = '';
+$servername = "localhost";
+$username   = "root";
+$password   = "";
+$dbname     = "Orders";
+
+$error   = '';
+$success = '';
+
+// Підключення до БД
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Помилка з'єднання: " . $conn->connect_error);
+}
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $dateInput = $_POST['date'] ?? '';
+    $orderId = $_POST['id'] ?? '';
 
-    // Розділяємо дату на рік, місяць і день
-    $parts = explode('-', $dateInput);
-    if (count($parts) === 3) {
-        $year = (int)$parts[0];
-        $month = (int)$parts[1];
-        $day = (int)$parts[2];
-
-        // Перевіряємо коректність дати
-        $validDate = checkdate($month, $day, $year);
+    if (!ctype_digit($orderId)) {
+        $error = "Невірний формат ID.";
     } else {
-        $validDate = false;
+        // Підготовка та виконання запиту на видалення
+        $stmt = $conn->prepare("DELETE FROM `OrderDetails` WHERE `id` = ?");
+        $stmt->bind_param("i", $orderId);
+
+        if ($stmt->execute()) {
+            $success = "Замовлення #{$orderId} успішно видалено.";
+        } else {
+            $error = "Помилка видалення: " . htmlspecialchars($conn->error);
+        }
+
+        $stmt->close();
     }
 }
+
+$conn->close();
 ?>
 <!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <title>Перевірка дати</title>
+    <title>Видалення замовлення</title>
+    <style>
+        body { font-family: sans-serif; padding: 1em; }
+        .msg { margin-bottom: 1em; }
+        .error { color: #c00; }
+        .success { color: #0c0; }
+        form { margin-bottom: 1em; }
+    </style>
 </head>
 <body>
-    <h1>Перевірка коректності дати</h1>
-    <form method="post" action="">
-        <label>
-            Введіть дату (РРРР-ММ-ДД):
-            <input type="date" name="date" required value="<?php echo htmlspecialchars($dateInput); ?>">
-        </label>
-        <br><br>
-        <button type="submit">Перевірити</button>
+    <h1>Видалити замовлення</h1>
+
+    <?php if ($error): ?>
+        <p class="msg error"><?= $error ?></p>
+    <?php elseif ($success): ?>
+        <p class="msg success"><?= $success ?></p>
+    <?php endif; ?>
+
+    <form method="post">
+        <label for="id">ID замовлення для видалення:</label><br>
+        <input type="text" id="id" name="id" required>
+        <button type="submit">Видалити</button>
     </form>
 
-    <?php if ($validDate !== null): ?>
-        <h2>Результат</h2>
-        <?php if ($validDate): ?>
-            <p style="color: green;">Дата <strong><?php echo htmlspecialchars($dateInput); ?></strong> є коректною.</p>
-        <?php else: ?>
-            <p style="color: red;">Дата <strong><?php echo htmlspecialchars($dateInput); ?></strong> є некоректною.</p>
-        <?php endif; ?>
-    <?php endif; ?>
+    <!-- Окрема кнопка для переходу до списку замовлень -->
+    <button type="button" onclick="window.location.href='view_orders.php'">
+        Перейти до списку замовлень
+    </button>
 </body>
 </html>
 
